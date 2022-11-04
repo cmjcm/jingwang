@@ -1,0 +1,729 @@
+/* 轮播图模块 */
+.nav {
+    position: relative;
+    height: 485px;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.nav img {
+    width: 100%;
+    height: 500px;
+    z-index: -999;
+}
+
+.shuffling-left {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -600px;
+    /* background-color: pink; */
+}
+
+/* 轮播图左侧 侧边栏模块*/
+.list {
+    float: left;
+}
+
+.list li {
+    width: 345px;
+    height: 72px;
+    line-height: 80px;
+    background-color: rgb(14, 106, 146);
+    margin: 5.5px 0;
+    text-align: center;
+}
+
+.list li:hover {
+    background-color: white;
+}
+
+.list li a {
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.list li:hover a {
+    color: rgb(14, 106, 146);
+}
+
+/* 轮播图右侧 轮播模块*/
+.showB {
+    position: relative;
+    float: right;
+    height: 470px;
+    width: 835px;
+    background-color: aliceblue;
+}
+
+.showB img {
+    height: 100%;
+    float: left;
+}
+
+.num {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    margin-right: -100px;
+}
+
+.num span {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #000;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.all-right {
+    float: right;
+    height: 470px;
+    width: 835px;
+    background-color: aliceblue;
+    padding: 15px 20px;
+    display: none;
+}
+
+/* 第一个模块  要闻动态*/
+.right-01 {
+    display: none;
+}
+
+.top {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(14, 106, 146);
+    border-bottom: 1px solid #000;
+}
+
+.active {
+    margin: 15px 0;
+}
+
+.active li {
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.active li span {
+    float: right;
+}
+
+/* 第二个模块  组织机构*/
+.right-02 {
+    display: none;
+    position: relative;
+}
+
+.fl-02 {
+    width: 520px;
+}
+
+.fl-02 ul li:nth-child(2n+1) {
+    float: left;
+    width: 3px;
+    height: 30px;
+    background-color: brown;
+    margin: 10px 10px;
+}
+
+.fl-02 ul li:nth-child(n+7) {
+    float: left;
+}
+
+.fl-02 ul li a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    margin: 10px 5px;
+}
+
+.fl-02 ul li div {
+    margin-left: 23px;
+}
+
+.fr-02 {
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    width: 300px;
+    height: 400px;
+    font-size: 18px;
+    line-height: 35px;
+    color: #000;
+}
+
+/* 第三个模块  政策文件*/
+.text {
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 10px;
+    font-weight: 700;
+    color: rgb(14, 106, 146);
+}
+
+.text input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgb(14, 106, 146);
+    margin: 0 10px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.text button {
+    height: 30px;
+    width: 60px;
+    background-color: rgb(14, 106, 146);
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.text span {
+    float: right;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(145, 0, 0);
+    margin: 10px 10px 0 10px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* 第四个模块 环境质量模块 */
+.li-01 {
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px dotted skyblue;
+}
+
+.right_fourth li span {
+    float: left;
+    width: 4px;
+    height: 30px;
+    background-color: brown;
+    margin: 10px 10px;
+}
+
+.right_fourth li p {
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(14, 106, 146);
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.shengtai {
+    margin-top: 30px;
+    margin-left: 28px;
+}
+
+.shengtai li {
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    list-style: disc;
+    float: left;
+    width: 250px;
+    height: 40px;
+}
+
+.li-02,
+.li-03 {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px dotted skyblue;
+}
+
+.li-04 {
+    width: 100%;
+    height: 100px;
+}
+
+/* 第五个模块 业务工作 */
+.right_fifth {
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px dotted skyblue;
+}
+
+.fifth-01 ul li {
+    float: left;
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+
+}
+
+.right_fifth ul li span {
+    float: left;
+    width: 4px;
+    height: 30px;
+    background-color: brown;
+    margin: 10px 10px;
+}
+
+.right_fifth ul li p {
+    height: 30px;
+    line-height: 30px;
+
+    padding-top: 10px;
+}
+
+.right_fifth ul li p a {
+    font-size: 20px;
+    color: rgb(14, 106, 146);
+    font-weight: 700;
+}
+
+.fifth-02 ul li {
+    float: left;
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.fifth-03 ul li {
+    float: left;
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/* 城市空气质量，讲座倒计时模块 */
+.allOf {
+    position: relative;
+    margin-top: 50px;
+    height: 400px;
+}
+
+.allOf .en-top {
+    margin-bottom: 10px;
+}
+
+/* 城市空气质量模块 */
+.exhibition {
+    float: right;
+}
+
+.exhibition table {
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+
+.exhibition table thead {
+    background-color: skyblue;
+}
+
+.exhibition table tr {
+    border: 1px dotted #ccc;
+}
+
+.exhibition table th {
+    font-weight: normal;
+    line-height: 1.5em;
+    border-bottom: 1px dotted #ccc;
+    width: 150px;
+    height: 60px;
+
+}
+
+.bg {
+    background-color: rgb(188, 232, 249);
+}
+
+/* 倒计时模块 */
+.count-top {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(221, 221, 221, .6);
+    float: left;
+    text-align: center;
+    line-height: 60px;
+
+}
+
+.count-top a {
+    font-size: 23px;
+    color: #000;
+}
+
+.countdown {
+    float: left;
+    position: relative;
+    width: 330px;
+    height: 361px;
+    color: #fff;
+    background-color: #e83632;
+    background: url(../images/countdown1.jpg);
+}
+
+.countdount-title {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0px 0;
+}
+
+.countdown .big {
+    position: absolute;
+    bottom: 75px;
+    left: 0;
+    width: 100%;
+    height: 110px;
+}
+
+.countdown-desc {
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0;
+    background-color: rgba(4, 63, 181, 0.5);
+}
+
+.lit {
+    padding: 0 60px;
+}
+
+.big span {
+    display: inline-block;
+    width: 55px;
+    height: 65px;
+    background-color: #000;
+    margin: 5px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+}
+
+/* 企业家谈、专家观点、精彩视频模块 */
+.three {
+    margin-top: 40px;
+    width: 1200px;
+    height: 450px;
+}
+
+.entrepreneur,
+.expert {
+    float: left;
+    width: 390px;
+    height: 450px;
+    /* background-color: pink; */
+    margin-right: 15px;
+}
+
+.videos {
+    float: left;
+    width: 390px;
+    height: 450px;
+    /* background-color: pink; */
+}
+
+/* 企业家谈模块 */
+.en-top {
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid rgb(40, 109, 214);
+}
+
+.en-top span {
+    float: left;
+    width: 7px;
+    height: 25px;
+    background-color: rgb(40, 109, 214);
+    margin: 8px 10px 0 0;
+}
+
+.en-top p {
+    line-height: 40px;
+    font-size: 20px;
+    color: rgb(40, 109, 214);
+    font-weight: 700;
+}
+
+.entrepreneur img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.en-bottom {
+    width: 100%;
+    height: 240px;
+    margin-top: 2px;
+}
+
+.en-bottom ul li {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px dotted rgb(40, 109, 214);
+}
+
+.en-bottom ul li a {
+    font-size: 17px;
+    color: #000;
+}
+
+.en-bottom ul li a:hover {
+    color: #e83632;
+    text-decoration: underline;
+}
+
+.en-bottom ul li span {
+    float: right;
+    font-size: 17px;
+    color: #aaa;
+}
+
+.en-bottom ul li em {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin-top: 22px;
+    margin-right: 4px;
+    background-color: rgb(40, 109, 214);
+}
+
+/* 精彩视频模块 */
+.videos video {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.en-top p {
+    height: 30px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+}
+
+.en-top .vid {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.vi-bot {
+    margin-top: 266px;
+}
+
+/* 新闻聚焦模块 */
+.news-top {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.news-bot {
+    width: 100%;
+    height: 845px;
+    margin-top: 20px;
+}
+
+.newsFocus ul li {
+    float: left;
+    width: 575px;
+    height: 260px;
+    padding: 20px;
+    color: #333;
+    position: relative;
+    box-shadow: 0 0 8px 5px #f5f5f5;
+    transition: all 0.3s linear;
+    background: #fff;
+    margin-right: 2%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.newsFocus ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 8px 5px #e3e2e2
+}
+
+.news-bot ul li img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -110px;
+    float: right;
+    width: 255px;
+    margin-left: 20px;
+}
+
+.bot-left h3 {
+    height: 50px;
+    width: 270px;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.bot-left h3 a {
+    color: #000;
+}
+
+.bot-left div {
+    height: 30px;
+    width: 270px;
+    font-size: 14px;
+    line-height: 30px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.bot-left p {
+    height: 100px;
+    width: 270px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-top: 5px;
+}
+
+/* 环保视觉模块 */
+.vision {
+    width: 1200px;
+    height: 520px;
+}
+
+.vi-first,
+.vi-second,
+.vi-third {
+    float: left;
+    width: 285px;
+    height: 445px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.vi-fourth {
+    float: left;
+    width: 285px;
+    height: 445px;
+    overflow: hidden;
+}
+
+.vi-first a img {
+    width: 285px;
+    height: 445px;
+    transition: all 0.6s;
+}
+
+.vi-first a img:hover {
+    transform: scale(1.1);
+}
+
+.vi-third a img {
+    width: 285px;
+    height: 449px;
+    transition: all 0.6s;
+}
+
+.vi-third a img:hover {
+    transform: scale(1.1);
+}
+
+.vi-02-top {
+    width: 285px;
+    height: 215px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.vi-02-top a img {
+    width: 285px;
+    height: 215px;
+    transition: all 0.6s;
+}
+
+.vi-02-top a img:hover {
+    transform: scale(1.1);
+}
+
+.vi-02-bot {
+    width: 285px;
+    height: 215px;
+    overflow: hidden;
+}
+
+.vi-02-bot a img {
+    width: 285px;
+    height: 215px;
+    transition: all 0.6s;
+}
+
+.vi-02-bot a img:hover {
+    transform: scale(1.1);
+}
+
+/* 侧边栏模块 */
+.ce {
+    position: fixed;
+    top: 50%;
+    right: 5px;
+    margin-top: -100px;
+}
+.box {
+    position: relative;
+    width: 120px;
+    height: 200px;
+    border: 1px solid gray; 
+}
+.box img {
+    position: absolute;
+    bottom: 10px;
+    left: 14px;
+    width: 93px;
+}
+.box p {
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 17px;
+}
+.box button {
+    position: absolute;
+    top: -1px;
+    left: -16px;
+    color: black;
+    border: 1px solid #ccc;
+    width: 15px;
+    height: 15px;
+    border-right: 0;
+    line-height: 11px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fff;
+}
